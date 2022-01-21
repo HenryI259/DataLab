@@ -134,8 +134,8 @@ while True:
     print("Ok here is your graph")
 
     for station in stationList:
+        dataList = station.cleanInfo(data)
         try:
-            dataList = station.cleanInfo(data)
             if int(time) in range(11):
                 newDataList = station.findMonth(int(time) + 1, dataList)
                 station.plotInfo(newDataList)
