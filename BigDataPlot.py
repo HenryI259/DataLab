@@ -128,7 +128,8 @@ with open('2016VizData.csv', newline='') as csvfile:
 name = input("Hello weather enjoyer, what is your name")
 print(f"Hello {name}!")
 while True:
-    data = input(f"What data would you like to see")
+    print(f"What data would you like to see")
+    data = input("Max, Min, Humidity, WindMax, WindMin, Rain")
     time = input(f"And for what time to do you want see that info (month number, year)")
     print("Ok here is your graph")
 
